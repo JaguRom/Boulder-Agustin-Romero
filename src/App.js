@@ -4,12 +4,10 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
-    <div>
-      <header>
-        <NavBar />
-        <ItemListContainer greeting="Goat Mountain Shop"/>
-      </header>
-    </div>
+    <body>
+      <NavBar />
+      <ItemListContainer greeting="Goat Mountain Shop"/>
+    </body>
   );
 }
 
