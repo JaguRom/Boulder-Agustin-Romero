@@ -20,7 +20,7 @@ const decrement = () => {
 
 return(
     <>
-    <div>
+    <div className="item-count-boxes">
         <h2>Contador</h2>
         <p>{count}</p>
         <button onClick={increment}>+</button>

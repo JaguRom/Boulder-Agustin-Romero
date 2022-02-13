@@ -1,0 +1,6 @@
+.product-card{
+    display:flex;
+    justify-content: center;
+    margin: 10px;
+    border: 10px solid #f1f1f1;
+}

@@ -19,7 +19,7 @@ nav{
 }
 
 .button{
-    border-radius: 30%;
+    border-radius: 10px;
     background-color: #8e9b1b;
     padding: 0 20px;
     color: black;

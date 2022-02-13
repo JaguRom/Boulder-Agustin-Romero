@@ -1,6 +1,5 @@
 import "./NavBar.css"
 import CartWidget from "../CartWidget/CartWidget";
-import ItemList from "../ItemList/ItemList";
 
 
 function NavBar() {
