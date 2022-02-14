@@ -16,19 +16,32 @@ function ItemListContainer({greeting}) {
 
   //state
   const [products, setProducts] = useState([]);
+  //loading
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
       getProducts().then((products) => {
           setProducts(products);
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+      .finally(() => {
+        setLoading(false);
       })
   },[])
 
 
 return (
       <div>
-        <h1 className="item-list-container-h1">{greeting}</h1>
-        <ItemCount stock={10} initial={1} OnAdd={OnAdd} />
-        <ItemList products={products} />
+        {loading ? (<h1 className="loading-style">Loading...</h1>
+        ) :(
+          <>
+          <h1 className="item-list-container-h1">{greeting}</h1>
+          <ItemCount stock={10} initial={1} OnAdd={OnAdd} />
+          <ItemList products={products} />
+          </>
+        )}
       </div>
     );
   }

@@ -1,15 +1,16 @@
 import "./NavBar.css"
 import CartWidget from "../CartWidget/CartWidget";
-
+import Button from "../Button/Button";
 
 function NavBar() {
     return (
       <header className="nav-container">
       <nav>
-            <button className="home button"> Home </button>
-            <button className="climbingGear button"> Climbing Gear </button>
-            <button className="trekking button"> Trekking </button>
-            <button button className="camping button"> Camping </button>
+            <Button buttonDetail="Home" />
+            <Button buttonDetail="Climbing Gear"/>
+            <Button buttonDetail="Trekking"/>
+            <Button buttonDetail="Camping"/>
+            
             <CartWidget />
       </nav>
       </header>

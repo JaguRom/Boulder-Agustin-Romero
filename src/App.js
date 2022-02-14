@@ -6,7 +6,7 @@ function App() {
   return (
     <body>
       <NavBar />
-      <ItemListContainer greeting="Goat Mountain Shop"/>
+      <ItemListContainer greeting="Boulder Mountain Shop"/>
     </body>
   );
 }
