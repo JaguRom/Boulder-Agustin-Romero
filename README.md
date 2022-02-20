@@ -11,7 +11,7 @@ Preentrega del proyecto final para el curso de React.js de CoderHouse.
 ### Desarrollado con:
 
 <ul>
-    <li>Visual Studio Code</li>e
+    <li>Visual Studio Code</li>
     <li>React</li>
     <li>Git</li>
     <li>Cloudinary</li>
@@ -19,5 +19,9 @@ Preentrega del proyecto final para el curso de React.js de CoderHouse.
 
 ### Developer: Agustín Romero
 
--[Github](https://github.com/JaguRom)
--[LinkedIn](https://www.linkedin.com/in/juan-agustin-romero)
+
+<ul>
+[Github](https://github.com/JaguRom)
+[LinkedIn](https://www.linkedin.com/in/juan-agustin-romero)
+</ul>
+
