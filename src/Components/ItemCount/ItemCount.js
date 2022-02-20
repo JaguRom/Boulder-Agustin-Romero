@@ -17,15 +17,14 @@ const decrement = () => {
 
 }
 
-
 return(
     <>
-    <div className="item-count-boxes">
-        <h2>Contador</h2>
-        <p>{count}</p>
-        <button onClick={increment}>+</button>
-        <button onClick={decrement}>-</button>
-        <button onClick={() => OnAdd(count)}>Add to cart</button>
+        <div className="item-count-boxes">
+            <h2>Contador</h2>
+            <p>{count}</p>
+            <button onClick={increment}>+</button>
+            <button onClick={decrement}>-</button>
+            <button onClick={() => OnAdd(count)}>Add to cart</button>
         </div>
     </>
 )

@@ -1,27 +1,23 @@
 import "./ItemListContainer.css"
-import ItemCount from "../ItemCount/ItemCount";
 import ItemList from "../ItemList/ItemList";
 import { useEffect, useState } from 'react'
-import { getProducts } from "../ItemArray/ItemArray";
+import { getProducts, getProductsByCategory } from "../ItemArray/ItemArray";
+import { useParams } from "react-router-dom";
 
-function ItemListContainer({greeting}) {
-  //OnAdd
-  const OnAdd = (count) => {
-  if (count > 0) {
-    console.log(`${count} items added to cart`);
-  } else {
-    console.log("No items added")
-  }
-};
 
+function ItemListContainer({
+  greeting
+}) {
   //state
   const [products, setProducts] = useState([]);
   //loading
   const [loading, setLoading] = useState(true);
+  //useParams
+  const  {categoryId}  = useParams();
 
-  useEffect(() => {
-      getProducts().then((products) => {
-          setProducts(products);
+/*   useEffect(() => {
+    getProducts(categoryId).then((products) => {
+        setProducts(products);
       })
       .catch((error) => {
         console.log(error)
@@ -29,7 +25,23 @@ function ItemListContainer({greeting}) {
       .finally(() => {
         setLoading(false);
       })
-  },[])
+  }, [categoryId]) */
+
+  useEffect(() => {
+    if (categoryId) {
+      setTimeout(() => {
+        getProductsByCategory(categoryId).then((products) => {
+          setProducts(products);
+          setLoading(false);
+        });
+      }, 2000);
+    } else {
+      getProducts().then((products) => {
+        setProducts(products);
+        setLoading(false);
+      });
+    }
+  }, [categoryId]);
 
 
 return (
@@ -38,7 +50,6 @@ return (
         ) :(
           <>
           <h1 className="item-list-container-h1">{greeting}</h1>
-          <ItemCount stock={10} initial={1} OnAdd={OnAdd} />
           <ItemList products={products} />
           </>
         )}
