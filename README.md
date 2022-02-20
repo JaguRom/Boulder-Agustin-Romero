@@ -1,6 +1,6 @@
 # Boulder Mountain Shop
 
-Outdoor & Adventure Gear
+### Outdoor & Adventure Gear
 
 ## Curso de React Js Coderhouse
 
@@ -20,8 +20,8 @@ Preentrega del proyecto final para el curso de React.js de CoderHouse.
 ### Developer: Agustín Romero
 
 
-<ul>
-[Github](https://github.com/JaguRom)
-[LinkedIn](https://www.linkedin.com/in/juan-agustin-romero)
-</ul>
+
+#### [Github](https://github.com/JaguRom)
+#### [LinkedIn](https://www.linkedin.com/in/juan-agustin-romero)
+
 
