@@ -6,9 +6,12 @@ const element = <FontAwesomeIcon icon={faShoppingCart} className="cart-widget"  
 
 
 
-function CartWidget() {
+function CartWidget({info}) {
   return (
-<div className="cart-widget-div" >{element}</div>
+<div className="cart-widget-div" >
+  <h1>{info}</h1>
+  {element}
+  </div>
   );
 }
 

@@ -1,4 +1,3 @@
-import "./ItemListContainer.css"
 import ItemList from "../ItemList/ItemList";
 import { useEffect, useState } from 'react'
 import { getProducts, getProductsByCategory } from "../ItemArray/ItemArray";
@@ -15,17 +14,6 @@ function ItemListContainer({
   //useParams
   const  {categoryId}  = useParams();
 
-/*   useEffect(() => {
-    getProducts(categoryId).then((products) => {
-        setProducts(products);
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-      .finally(() => {
-        setLoading(false);
-      })
-  }, [categoryId]) */
 
   useEffect(() => {
     if (categoryId) {
