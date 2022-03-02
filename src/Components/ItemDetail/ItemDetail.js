@@ -10,14 +10,16 @@ import { CartContext } from "../../Context/CartContext";
 function ItemDetail({product}) {
   //Almacenamiento de estado (counter)
   const [counterData, setCounterData] = useState(0);
-  console.log("This is counter", counterData);
-  //CC cartcontext
-    //const {addToCart } = useContext(CartContext);
+  //Almacenamiento de estado (cart)
+  const {addToCart} = useContext(CartContext);
+ 
 
   //OnAdd + Cartcontext
-    const OnAdd = (count) => {;
-    setCounterData(count)
-   // addToCart(product, count);
+  const OnAdd = (count) => {
+  addToCart (product, count);
+
+  setCounterData(count);
+
 
       if (count > 0) {
         setCounterData(count);
@@ -25,7 +27,6 @@ function ItemDetail({product}) {
       } else {
         console.log("No items added")
       }
-
     };
     return (
       <div className="individual-items">
@@ -35,9 +36,14 @@ function ItemDetail({product}) {
         <p>Price: ${product.price}</p>
         <p>Available stock: {product.stock}</p>
         {counterData ? (
-    <Link to="/cart">
-      <ButtonDetail name="Go to cart." />
-    </Link>
+          <>
+          <Link to="/Cart">
+          <ButtonDetail name="Go to cart." />
+          </Link>
+          <Link to="/">
+          <ButtonDetail name="Return Home" />
+          </Link>
+          </>
   ) : (
         <ItemCount stock={product.stock} initial={1} OnAdd={OnAdd}/>
       )}

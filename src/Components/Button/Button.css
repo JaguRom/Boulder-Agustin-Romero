@@ -1,9 +1,10 @@
 .button{
+    color: black;
     border-radius: 10px;
     background-color: #8e9b1b;
     padding: 0 20px;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .button:hover {
 box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
