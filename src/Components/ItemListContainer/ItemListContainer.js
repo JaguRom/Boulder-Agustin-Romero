@@ -2,7 +2,9 @@ import ItemList from "../ItemList/ItemList";
 import { useEffect, useState } from 'react'
 import { getProducts, getProductsByCategory } from "../ItemArray/ItemArray";
 import { useParams } from "react-router-dom";
-
+import {getDocs, collection} from "firebase/firestore";
+import {firestoreDb} from "../../Services/Firebase/firebase";
+ 
 
 function ItemListContainer({
   greeting

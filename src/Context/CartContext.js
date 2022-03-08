@@ -43,12 +43,20 @@ const removeItem = (id) =>{
    setCart(cart.filter((product) => product.id !== id))
 
 }
+/* //Totalprice
+const getTotalPrice = () => {
+    return cart.reduce((acc, purchase) => {
+      return acc + purchase.product.price * purchase.count;
+    }, 0);
+  };
+  console.log("This is getTotalPrice", getTotalPrice()) */
+
 //Clear cart
 const clearCart = () =>{
     setCart([]);
 }
 return (
-        <CartContext.Provider value={{cart,clearCart,removeItem, addToCart}}>
+        <CartContext.Provider value={{cart,clearCart,removeItem, addToCart, isInCart}}>
             {children}
         </CartContext.Provider>
     );

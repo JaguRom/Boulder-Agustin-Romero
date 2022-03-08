@@ -11,7 +11,7 @@ function NavBar() {
             <NavLink to={'/category/Climbing Gear'} className="button climbingGear">Climbing Gear</NavLink>
             <NavLink to={'/category/Trekking'} className="button trekking">Trekking</NavLink>
             <NavLink to={'/category/Camping'} className="button camping">Camping</NavLink>
-            <NavLink to ={'/Cart'} >{<CartWidget />}</NavLink>
+            <NavLink to ={'/Cart'} className="noDec" >{<CartWidget />}</NavLink>
       </nav>
       </header>
     )

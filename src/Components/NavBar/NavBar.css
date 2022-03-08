@@ -53,3 +53,6 @@ color: snow;
 .gear {
     grid-column-start: 4;
 }
+.noDec{
+    text-decoration: none;
+}

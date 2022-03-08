@@ -1,12 +1,17 @@
 import "./Cart.css"
 import {CartContext} from "../../Context/CartContext";
 import React, {useContext} from "react";
-import Button from "../Button/Button";
+
 
 const Cart = ({info}) =>{
   const {cart, clearCart, removeItem} = useContext(CartContext);
-  
   console.log("This is cart", cart);
+
+/*   const total= cart.reduce((acc, item) => acc + item.product.price * item.count, 0);
+  console.log("This is total", total);
+  const totalPrice = total.reduce((acc, curr) => acc + curr, 0)
+console.log("This is totalPrice", totalPrice);
+ */
 
  return (
 <>
@@ -22,6 +27,7 @@ const Cart = ({info}) =>{
         <button onClick={()=>removeItem(product.id)}>Remove</button>
       </ul>
     ))}
+
     <button onClick={clearCart}>Clear Cart</button>
 </div>
 
