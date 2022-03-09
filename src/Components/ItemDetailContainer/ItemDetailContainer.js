@@ -3,7 +3,7 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react'
 import { getItems } from "../ItemArray/ItemArray";
-import {getDoc, doc, DocumentReference} from "firebase/firestore";
+import {getDoc, doc,} from "firebase/firestore";
 import {firestoreDb} from "../../Services/Firebase/firebase";
 
 function ItemDetailContainer() {
@@ -31,9 +31,9 @@ return (() => {
   setProduct()
 })
 
-}, [productId]) // eslint-disable-line
+}, []) // eslint-disable-line
 
-console.log("This is the Firebase product", product);
+console.log("This is the  firebaseproduct", product);
 
 
     /*       getItems(productId).then((product) => {
