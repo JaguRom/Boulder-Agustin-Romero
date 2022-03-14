@@ -7,8 +7,10 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {CartContextProvider} from './Context/CartContext';
 import CartWidget from './Components/CartWidget/CartWidget';
 
+
 function App() {
   return (
+
     <BrowserRouter>
       <CartContextProvider>
       <NavBar />
@@ -20,6 +22,7 @@ function App() {
       </Routes>
       </CartContextProvider>
       </BrowserRouter>
+
   );
 }
 
