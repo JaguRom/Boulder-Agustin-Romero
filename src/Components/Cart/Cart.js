@@ -44,6 +44,8 @@ getDoc(doc(firestoreDb,"products",prod.id )).then(response => {
      addDoc(collection(firestoreDb, "products"), objOrder).then(({id}) => {
        batch.commit().then(() => {
          alert("Order placed successfully.  Order id: " + id)
+       }).catch(err => {
+         alert("Error:", err)
        })
      })
     }
