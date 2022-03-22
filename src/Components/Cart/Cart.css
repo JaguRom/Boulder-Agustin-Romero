@@ -12,3 +12,11 @@
     height: 350px;
     width: 350px;
     }
+
+.return-home{
+    text-decoration: none;
+    }
+.class-display-none{
+    visibility: hidden;
+    }
+

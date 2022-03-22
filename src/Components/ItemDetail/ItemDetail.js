@@ -23,7 +23,7 @@ function ItemDetail({product}) {
 
       if (count > 0) {
         setCounterData(count);
-        console.log(`${count} items added to cart`);
+
       } else {
         console.log("No items added")
       }
@@ -50,11 +50,6 @@ function ItemDetail({product}) {
       </div>
     );
   }
-
-
-  
-
-
 
   export default ItemDetail;
 

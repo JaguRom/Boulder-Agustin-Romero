@@ -21,20 +21,6 @@ let constReducedCount = modifiedCount.reduce(reduceFunction, 0)
 function reduceFunction(accumulator, currentValue) {
   return accumulator + currentValue;
 }
-
-console.log ("This is THE reduced count", constReducedCount); 
-
-
-/*   //  IsInCart check
-  console.log("This is isInCart", isInCart());
-  //Cart check
-  console.log("This is cart", cart);
-  //destructured cart check
-  console.log("This is destructured cart", ...cart);
-  //cartcountcheck
-  console.log("This is cartcount", cart.count);
- */
-   
 if (constReducedCount <= 0) {
 
 return (
