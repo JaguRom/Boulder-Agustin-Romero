@@ -8,20 +8,20 @@
 Entrega del proyecto final para el curso de React.js de CoderHouse.
 "Boulder Mountain Shop" es una maqueta de ecommerce desarrollado integramente en React Js, aplicando diseño modular en cada uno de los componentes.
 -
-<strong>Final presentation of Coderhouse´s React.js course.
-"Boulder Mountain Shop" is an ecommerce mockup, fully developed on React Js, aplying modular design en each component.</strong>
+Final presentation of Coderhouse´s React.js course.
+"Boulder Mountain Shop" is an ecommerce mockup, fully developed on React Js, aplying modular design en each component.
 
 
-![Demo](https://github.com/https://github.com/JaguRom/Boulder-Agustin-Romero/blob/main/boulderGiff.gif)
+![Demo](https://github.com/https://github.com/JaguRom/Boulder-Agustin-Romero/main/boulderGiff.gif)
 
 ### Header ###
 Esta sección contiene las diferentes categorías de navegabilidad del ecommerce.
 La sección /Home lleva al usuario hacia el inicio de la página. Las categorías permiten navegar entre los diferentes productos disponibles en la tienda.
 El ícono de Cart aparece al realizar la primer compra, y dirige al usuario hacia la sección "/Cart", donde puede finalizar la operación después de llenar el formulario de compra.
 -
-<strong>This seccion contains the different navegable categories of the store.
+<italic>This seccion contains the different navegable categories of the store.
 Section /Home directs the user back to the initial page. Categories allow users to navigate between the different products available in the store.
-The Cart icon is shown when the first purchase is made. It takes the user to the "/Cart" section, where the operation can be finished after filling in the purchase form.</strong>
+The Cart icon is shown when the first purchase is made. It takes the user to the "/Cart" section, where the operation can be finished after filling in the purchase form.</italic>
 
 ### Body ###
 Esta sección contiene todos los productos disponibles en la tienda.
@@ -55,16 +55,13 @@ After this, the buyer is enabled to finish the purchase.
 ## *Dependencias/ Dependencies:*
 
 - React Router: Se utilizo esta librería para crear las rutas de navegación que renderizan cada uno de los  componentes, agregandole dinamismo a la aplicación.
--
--React Router: This library was used to create the  navigational routes in charge of rendering each of the components, adding dinamism to the aplication.
+ React Router: This library was used to create the  navigational routes in charge of rendering each of the components, adding dinamism to the aplication.
 
 - Fontawesome: Los íconos utilizados en la applicación son componentes importados de esta librería.
--
-- Fontawesome: All icons used in the application are imported components of this library
+  Fontawesome: All icons used in the application are imported components of this library
 
 - Firebase: Se uso esta librería para utilizar la base de datos de Firebase, para almacenar el stock de la tienda y los datos del usuario.
--
-- Firebase: This library was used to operate Firebase´s database in order to store the shop´s item stock and user data.
+  Firebase: This library was used to operate Firebase´s database in order to store the shop´s item stock and user data.
 
 ## *Ejecución de la aplicación / Application execute :*
 
@@ -94,8 +91,8 @@ After this, the buyer is enabled to finish the purchase.
 ### *Información acerca del desarrollo / Information about development :*
 ## *Rutas/ Routes:*
 
-- Main ("/"): Renderiza las imágenes de productos destacados, un container para acceder a las distintas categorías y otro con todos los productos existentes en la base de datos.
--
+- Main ("/"): Renderiza las imágenes de todos los productos junto con un navbar que permite acceder a todas las categorías
+- Main ("/"): Renders images of all products together with a navbar that allows access to every category.
 
 - Category ("/category/:categoryId"): Renderiza los productos filtrados en base a su categoría.
 - Category ("/category/:categoryId"): Renders filtered products according to selected category.
@@ -104,7 +101,7 @@ After this, the buyer is enabled to finish the purchase.
 - Item ("/detail/:productId"): Renders a card with selected product details.
 
 - Cart ("/cart"): Renderiza el carrito de compras con los productos agregados por el usuario.
-- Cart ("/cart"): Reders the cart page whith products added by the user
+- Cart ("/cart"): Reders the cart page whith products added by the user.
 
 
 
