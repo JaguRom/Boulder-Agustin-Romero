@@ -5,6 +5,7 @@
 ## React Js Coderhouse
 
 ## Información del proyecto/ Project information:
+
 Entrega del proyecto final para el curso de React.js de CoderHouse.
 "Boulder Mountain Shop" es una maqueta de ecommerce desarrollado integramente en React Js, aplicando diseño modular en cada uno de los componentes.
 -
@@ -12,7 +13,7 @@ Final presentation of Coderhouse´s React.js course.
 "Boulder Mountain Shop" is an ecommerce mockup, fully developed on React Js, aplying modular design en each component.
 
 
-![Demo](https://github.com/https://github.com/JaguRom/Boulder-Agustin-Romero/main/boulderGiff.gif)
+![Demo](https://github.com/JaguRom/Boulder-Agustin-Romero/blob/proyectoFinal/boulderGiff.gif)
 
 ### Header ###
 Esta sección contiene las diferentes categorías de navegabilidad del ecommerce.
@@ -52,16 +53,16 @@ After this, the buyer is enabled to finish the purchase.
     <li>Cloudinary</li>
 </ul>
 
-## *Dependencias/ Dependencies:*
+## *Dependencias / Dependencies:*
 
 - React Router: Se utilizo esta librería para crear las rutas de navegación que renderizan cada uno de los  componentes, agregandole dinamismo a la aplicación.
- React Router: This library was used to create the  navigational routes in charge of rendering each of the components, adding dinamism to the aplication.
+- React Router: This library was used to create the  navigational routes in charge of rendering each of the components, adding dinamism to the aplication.
 
 - Fontawesome: Los íconos utilizados en la applicación son componentes importados de esta librería.
-  Fontawesome: All icons used in the application are imported components of this library
+- Fontawesome: All icons used in the application are imported components of this library
 
 - Firebase: Se uso esta librería para utilizar la base de datos de Firebase, para almacenar el stock de la tienda y los datos del usuario.
-  Firebase: This library was used to operate Firebase´s database in order to store the shop´s item stock and user data.
+- Firebase: This library was used to operate Firebase´s database in order to store the shop´s item stock and user data.
 
 ## *Ejecución de la aplicación / Application execute :*
 
@@ -89,7 +90,7 @@ After this, the buyer is enabled to finish the purchase.
     ```
 
 ### *Información acerca del desarrollo / Information about development :*
-## *Rutas/ Routes:*
+## *Rutas / Routes:*
 
 - Main ("/"): Renderiza las imágenes de todos los productos junto con un navbar que permite acceder a todas las categorías
 - Main ("/"): Renders images of all products together with a navbar that allows access to every category.
