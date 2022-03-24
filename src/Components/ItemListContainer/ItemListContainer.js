@@ -1,3 +1,4 @@
+import "./ItemListContainer.css";
 import ItemList from "../ItemList/ItemList";
 import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
@@ -33,7 +34,7 @@ function ItemListContainer({greeting}) {
 
 
 return (
-      <div>
+      <div className="item">
         {loading ? (<h1 className="centered-flex loading-style">Loading...</h1>
         ) :(
           <>

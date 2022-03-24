@@ -33,7 +33,7 @@ return (() => {
 }, []) //eslint-disable-line
 
 return (
-      <div className="centered-flex">
+      <div className="item-detail-container centered-flex">
         {loading ? (<h1 className="centered-flex loading-style">Loading...</h1>
         ) :(
           <>

@@ -1,12 +1,31 @@
-.item-list-container-h1{
-    width: 100%;
-    background-color: #97D7FC;
-    color: black;
-    text-align: center;
+.item{
+height: 50rem;
+background-image: url("https://res.cloudinary.com/dv3opkhbh/image/upload/v1648137930/Boulder/rock-climbing_p5pieo.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 80%;
+background-attachment: fixed;
+background-color: #0a0404;
 }
 
 .loading-style{
     display:flex;
     justify-content: center;
     color: #8e9b1b;
+    height: 50rem;
+}
+.item-list-container-h1{
+    color: #8e9b1b;
+   background-color: #0a0404 ;
+   background-blend-mode: lighten;
+    font-family:  Helvetica;
+    font-weight: 300;
+    
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-top: 0rem;
 }

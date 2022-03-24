@@ -86,13 +86,15 @@ function reduceFunction(accumulator, currentValue) {
 if(cart.length === 0){
   return(
     <>
-    <div className="centered-flex">
+    <div className="cart-container">
+    <div className="cart centered-flex">
       <h1>Your cart is empty</h1>
     </div>
     <div className="centered-flex text-decoration-none">
     <Link className="return-home" to="/">
     <h2>Return Home</h2>
     </Link>
+    </div>
     </div>
     </>
   )
@@ -101,12 +103,15 @@ if(cart.length === 0){
 
  return (
 <>
-<div>
-   <h1>{info}</h1>
+<div className="cart-container">
+<div className="cart-h1 centered-flex">
+<h1>{info}</h1>
+</div>
+<div className="cart-flex">
 
 {cart.map((product)=>(
   
-  <div>
+  <div className="cart-product-card">
       <ul key={product.id}>In Cart:
         <li>Name: {product.name}</li>
         <li>Quantity: {product.count}</li>
@@ -116,10 +121,10 @@ if(cart.length === 0){
       </ul>
   </div>
   ))}
-<div>
-<h2 className="centered-flex">Total: ${constReducedCount}</h2>
 </div>
     <button onClick={clearCart}>Clear Cart</button>
+<div>
+<h2 className="total-card centered-flex">Total: ${constReducedCount}</h2>
 </div>
 
 
@@ -128,6 +133,7 @@ if(cart.length === 0){
 </div>
 <div className="centered-flex">
   <button onClick={confirmOrder}>Confirm Purchase</button> 
+</div>
 </div>
 </>)
 

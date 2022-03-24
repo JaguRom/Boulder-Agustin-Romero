@@ -30,19 +30,23 @@ function ItemDetail({product}) {
     };
     return (
       <div className="individual-items">
-        <h1>{product.name}</h1>
-        <img src={product.img} alt="" className="product-size"></img>
-        <p>{product.description}</p>
-        <p>Price: ${product.price}</p>
-        <p>Available stock: {product.stock}</p>
+        <h1 className="h1-class">{product.name}</h1>
+        <img src={product.img} alt="" className="img-class product-size"></img>
+        <p className="description-class">{product.description}</p>
+        <p className="price-class">Price: ${product.price}</p>
+        <p className="stock-class">Available stock: {product.stock}</p>
         {counterData ? (
           <>
+          <div className="cart-button">
           <Link to="/Cart">
           <ButtonDetail name="Go to cart." />
           </Link>
+          </div>
+          <div className="return-button">
           <Link to="/">
           <ButtonDetail name="Return Home" />
           </Link>
+          </div>
           </>
   ) : (
         <ItemCount stock={product.stock} initial={1} OnAdd={OnAdd}/>

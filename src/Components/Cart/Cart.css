@@ -1,3 +1,7 @@
+.cart-container{
+ height: 50rem;
+ background-image: url("https://res.cloudinary.com/dv3opkhbh/image/upload/v1648137930/Boulder/rock-climbing_p5pieo.jpg");
+}
 .cart-widget{
     color:black;
     font-size:  2.5rem;
@@ -5,11 +9,14 @@
     margin: 1rem, 1rem, 1rem, 1rem;
     padding-top: 0.30rem;
 }
+.cart-flex{
+display: flex;
+}
 
 .individual-items{
     margin: 20px;
     border: 10px solid #f1f1f1;
-    height: 350px;
+    height: 450px;
     width: 350px;
     }
 
@@ -19,4 +26,27 @@
 .class-display-none{
     visibility: hidden;
     }
+.cart-product-card{
+display:flex;
+justify-content: center;
+margin: 10px;
+border: 10px solid #ffffff;
+height: 180px;
+width: 250px;
+background-color: #b15f3c;
+}
 
+.total-card{
+margin: 10px;
+border: 10px solid black;
+height: 80px;
+width: 100px;
+background-color:#b15f3c
+}
+.cart-h1{
+    margin: 10px;
+    border: 10px solid black;
+    height: 80px;
+    width: 250px;
+    background-color:#ffffff
+}
