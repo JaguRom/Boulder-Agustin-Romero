@@ -13,7 +13,7 @@ Final presentation of Coderhouse´s React.js course.
 "Boulder Mountain Shop" is an ecommerce mockup, fully developed on React Js, aplying modular design en each component.
 
 
-![Demo](https://github.com/JaguRom/Boulder-Agustin-Romero/blob/proyectoFinal/boulderGiff.gif)
+![Demo](https://github.com/JaguRom/Boulder-Agustin-Romero/blob/correccionesTrabajoFinal/boulderGiff.gif)
 
 ### Header ###
 Esta sección contiene las diferentes categorías de navegabilidad del ecommerce.
