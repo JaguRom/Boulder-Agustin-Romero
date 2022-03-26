@@ -5,6 +5,8 @@ import {writeBatch, getDoc, addDoc, collection, doc } from "firebase/firestore";
 import { firestoreDb } from "../../Services/Firebase/firebase";
 import { Link } from "react-router-dom";
 import Basic from "../FormikForm/FormikForm";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -12,10 +14,11 @@ import Basic from "../FormikForm/FormikForm";
 
  const Cart = ({info}) =>{
   const {cart, clearCart, removeItem } = useContext(CartContext);
-  
-  //Calculo de count total
+//show purchase button
+
+//Calculo de count total
   let modifiedCount = cart.map((cart)=>{
-    return cart.price * cart.count;
+  return cart.price * cart.count;
 
 });
 let total = modifiedCount.reduce((a,b)=>{
@@ -23,17 +26,12 @@ let total = modifiedCount.reduce((a,b)=>{
 }
 ,0);
 
-//
+
 let constReducedCount = modifiedCount.reduce(reduceFunction, 0)
 function reduceFunction(accumulator, currentValue) {
   return accumulator + currentValue;
 }
-
-
-
-
-
-  const confirmOrder = () => {
+    const confirmOrder = () => {
     const values = localStorage.getItem('values');
     const objContactValues = JSON.parse(values);
     const objContact = {
@@ -49,7 +47,17 @@ function reduceFunction(accumulator, currentValue) {
       total: total,
       date: new Date(),
     }
-
+if(objContact.name === "" || objContact.phone === "" || objContact.address === "" || objContact.email === ""){
+  toast.error('Please fill in the form before confirming your purchase', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
+} else {
     clearCart()
     //Write batch
     const batch = writeBatch(firestoreDb)
@@ -69,30 +77,54 @@ function reduceFunction(accumulator, currentValue) {
      addDoc(collection(firestoreDb, "orders"), objOrder).then(({id}) => {
        batch.commit().then(() => {
          //clearCart()
-         alert("Order placed successfully.  Order id: " + id)
-
-
-
+         toast.success("Order placed successfully.  Order id: " + id, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
 
        }).catch(err => {
-         alert("Error:", err)
+        toast.error("Error:", err, {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          })
        })
      })
     }
+}
 
-
-
+    
    }
 if(cart.length === 0){
   return(
     <>
+<ToastContainer
+position="bottom-center"
+autoClose={5000}
+hideProgressBar
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+/>
     <div className="cart-container">
-    <div className="cart centered-flex">
+    <div className="cart empty centered-flex">
       <h1>Your cart is empty</h1>
     </div>
     <div className="centered-flex text-decoration-none">
     <Link className="return-home" to="/">
-    <h2>Return Home</h2>
+    <h2 className="returnHome-button">Return Home</h2>
     </Link>
     </div>
     </div>
@@ -104,8 +136,10 @@ if(cart.length === 0){
  return (
 <>
 <div className="cart-container">
+<div className="centered-flex">
 <div className="cart-h1 centered-flex">
 <h1>{info}</h1>
+</div>
 </div>
 <div className="cart-flex">
 
@@ -122,21 +156,21 @@ if(cart.length === 0){
   </div>
   ))}
 </div>
-    <button onClick={clearCart}>Clear Cart</button>
-<div>
+    <button className="clear-button" onClick={clearCart}>Clear Cart</button>
+<div className="centered-flex">
 <h2 className="total-card centered-flex">Total: ${constReducedCount}</h2>
 </div>
 
 
-<div>
+<div className="cart-form">
   <Basic/>
 </div>
+
 <div className="centered-flex">
-  <button onClick={confirmOrder}>Confirm Purchase</button> 
+  <button className="purchase-button" onClick={confirmOrder}>Confirm Purchase</button> 
 </div>
+
 </div>
 </>)
-
  }}
-
 export default Cart;

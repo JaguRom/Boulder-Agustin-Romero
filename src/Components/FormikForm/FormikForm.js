@@ -1,9 +1,14 @@
 // Render Prop
 import React from 'react';
+import "./FormikForm.css";
  import { Formik, Form, Field, ErrorMessage } from 'formik';
+ import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
  const Basic = () => (
-   <div>
+
+   <div className='form-div'>
+
      <h1 className='centered-flex'>Please fill in the form before confirming your purchase</h1>
      <Formik
        initialValues={{ email: '', name: '', address: '', phone: ''}}
@@ -20,19 +25,25 @@ import React from 'react';
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert("Now you can confirm your purchase");
-
-            console.log("This is values", values)
+            toast.success('Form Sent', {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: true,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              });
             localStorage.setItem('values', JSON.stringify(values));
+           document.querySelector('.toShow').classList.toggle('show');
 
-            setSubmitting(false);
-          }, 100);
+           setSubmitting(false);
+          }, 0);
         }}
         >
        {({ isSubmitting }) => (
          <Form className='centered-flex'>
            <ul>
-
           <li>
             <label>Name</label>
            <Field type="name" name="name" />
@@ -53,17 +64,24 @@ import React from 'react';
            <Field type="address" name="address" />
            <ErrorMessage name="address" component="div" />
            </li>
-           <button type="submit" disabled={isSubmitting}>
+           <button className='submit-button' type="submit" disabled={isSubmitting}>
              Submit
            </button>
            </ul>
-
+           <ToastContainer 
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover />
          </Form>
        )}
      </Formik>
    </div>
-
-
  );
 
  export default Basic

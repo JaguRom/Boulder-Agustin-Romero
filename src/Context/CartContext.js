@@ -36,6 +36,8 @@ const removeItem = (id) =>{
 const clearCart = () =>{
     setCart([]);
 }
+//visibility
+
 return (
         <CartContext.Provider value={{cart,clearCart,removeItem, addToCart, isInCart}}>
             {children}

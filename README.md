@@ -42,6 +42,11 @@ It is also included an option to delete a single product of the list, or cleanin
 To complete the purchase order, the user is required to fill in the purchase form with their personal information.
 After this, the buyer is enabled to finish the purchase.
 
+### Footer ###
+Esta sección muestra el nombre de la persona que desarrolló la página y el año de deploy.
+-
+This section shows developer´s name and deploy year.
+
 ## Desarrollado con/ developed with:
 
 <ul>
@@ -51,6 +56,7 @@ After this, the buyer is enabled to finish the purchase.
     <li>Firebase</li>
     <li>Formik</li>
     <li>Cloudinary</li>
+    <li>React Toastify</li>
 </ul>
 
 ## *Dependencias / Dependencies:*

@@ -3,6 +3,7 @@
     background-color: #9D4F1F;
     background-image: linear-gradient(170deg, #F7D8A8 5%,#9D4F1F 80%);
     color: #FFFBFF;
+    padding-top: 10px;
 }
 
 nav{
@@ -45,6 +46,7 @@ color: snow;
     text-align: center;
     text-transform: uppercase;
     size: 15px;
+    height: fit-content;
 }
 .button:hover {
 box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;

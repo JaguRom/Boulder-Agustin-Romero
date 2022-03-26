@@ -38,7 +38,9 @@ return (
         {loading ? (<h1 className="centered-flex loading-style">Loading...</h1>
         ) :(
           <>
+          <div className="centered-flex">
           <h1 className="centered-flex item-list-container-h1">{greeting}</h1>
+          </div>
           <ItemList products={products} />
           </>
         )}
