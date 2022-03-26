@@ -6,10 +6,8 @@
 
 ## Información del proyecto/ Project information:
 
-<p>
-Entrega del proyecto final para el curso de React.js de CoderHouse.
-"Boulder Mountain Shop" es una maqueta de ecommerce desarrollado integramente en React Js, aplicando diseño modular en cada uno de los componentes.
-</p>
+<p>Entrega del proyecto final para el curso de React.js de CoderHouse.
+"Boulder Mountain Shop" es una maqueta de ecommerce desarrollado integramente en React Js, aplicando diseño modular en cada uno de los componentes.</p>
 -
 <p>
 Final presentation of Coderhouse´s React.js course.
@@ -20,40 +18,40 @@ Final presentation of Coderhouse´s React.js course.
 ![Demo](https://github.com/JaguRom/Boulder-Agustin-Romero/blob/correccionesTrabajoFinal/boulderGiff.gif)
 
 ### Header ###
--
-Esta sección contiene las diferentes categorías de navegabilidad del ecommerce.
+
+<p>Esta sección contiene las diferentes categorías de navegabilidad del ecommerce.
 La sección /Home lleva al usuario hacia el inicio de la página. Las categorías permiten navegar entre los diferentes productos disponibles en la tienda.
-El ícono de Cart aparece al realizar la primer compra, y dirige al usuario hacia la sección "/Cart", donde puede finalizar la operación después de llenar el formulario de compra.
+El ícono de Cart aparece al realizar la primer compra, y dirige al usuario hacia la sección "/Cart", donde puede finalizar la operación después de llenar el formulario de compra.</p>
 -
-This seccion contains the different navegable categories of the store.
+<p>This seccion contains the different navegable categories of the store.
 Section /Home directs the user back to the initial page. Categories allow users to navigate between the different products available in the store.
-The Cart icon is shown when the first purchase is made. It takes the user to the "/Cart" section, where the operation can be finished after filling in the purchase form.
+The Cart icon is shown when the first purchase is made. It takes the user to the "/Cart" section, where the operation can be finished after filling in the purchase form.</p>
 
 ### Body ### 
+
+<p>Esta sección contiene todos los productos disponibles en la tienda.
+Al clickear sobre un producto, se dirige al usuario hacia la página que contiene el detalle del producto, en la cual puede seleccionarse la cantidad a comprar dependiendo del stock disponible.</p>
 -
-Esta sección contiene todos los productos disponibles en la tienda.
-Al clickear sobre un producto, se dirige al usuario hacia la página que contiene el detalle del producto, en la cual puede seleccionarse la cantidad a comprar dependiendo del stock disponible.
--
-This section contains every product available in the store.
-By clicking a product the user is directed towards the product detail page, where the item quantity to buy can be selected depending on the available stock.
+<p>This section contains every product available in the store.
+By clicking a product the user is directed towards the product detail page, where the item quantity to buy can be selected depending on the available stock.</p>
 
 ### Cart ###
--
-En esta sección el usuario puede ver la cantidad y el costo total de los productos a comprar.
+
+<p>En esta sección el usuario puede ver la cantidad y el costo total de los productos a comprar.
 También se incluye la opción de borrar un producto particular de la lista, o limpiar el carrito eliminando todos los productos disponibles.
 Para completar la orden de compra, se requiere al usuario llenar el formulario de compra con sus datos personales.
-Despues de esto, el comprador está habilitado para finalizar la compra.
+Despues de esto, el comprador está habilitado para finalizar la compra.</p>
 -
-In this section, the user can see the quantity and total amount of the products to buy.
+<p>In this section, the user can see the quantity and total amount of the products to buy.
 It is also included an option to delete a single product of the list, or cleaning the cart by eliminating all available products.
 To complete the purchase order, the user is required to fill in the purchase form with their personal information.
-After this, the buyer is enabled to finish the purchase.
+After this, the buyer is enabled to finish the purchase.</p>
 
 ### Footer ###
+
+<p>Esta sección muestra el nombre de la persona que desarrolló la página y el año de deploy.</p>
 -
-Esta sección muestra el nombre de la persona que desarrolló la página y el año de deploy.
--
-This section shows developer´s name and deploy year.
+<p>This section shows developer´s name and deploy year.</p>
 
 ## Desarrollado con/ developed with:
 
@@ -103,8 +101,8 @@ This section shows developer´s name and deploy year.
     npm start
     ```
 
-### *Información acerca del desarrollo / Information about development :*
-## *Rutas / Routes:*
+## *Información acerca del desarrollo / Information about development :*
+### *Rutas / Routes:*
 
 - Main ("/"): Renderiza las imágenes de todos los productos junto con un navbar que permite acceder a todas las categorías
 - Main ("/"): Renders images of all products together with a navbar that allows access to every category.
