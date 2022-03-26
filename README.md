@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# **Boulder Mountain Shop**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Outdoor & Adventure Gear
 
-## Available Scripts
+## React Js Coderhouse
 
-In the project directory, you can run:
+## Información del proyecto/ Project information:
 
-### `npm start`
+<p>Entrega del proyecto final para el curso de React.js de CoderHouse.
+"Boulder Mountain Shop" es una maqueta de ecommerce desarrollado integramente en React Js, aplicando diseño modular en cada uno de los componentes.</p>
+-
+<p>
+Final presentation of Coderhouse´s React.js course.
+"Boulder Mountain Shop" is an ecommerce mockup, fully developed on React Js, aplying modular design en each component.
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Demo](https://github.com/JaguRom/Boulder-Agustin-Romero/blob/correccionesTrabajoFinal/boulderGiff.gif)
 
-### `npm test`
+### Header ###
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>Esta sección contiene las diferentes categorías de navegabilidad del ecommerce.
+La sección /Home lleva al usuario hacia el inicio de la página. Las categorías permiten navegar entre los diferentes productos disponibles en la tienda.
+El ícono de Cart aparece al realizar la primer compra, y dirige al usuario hacia la sección "/Cart", donde puede finalizar la operación después de llenar el formulario de compra.</p>
+-
+<p>This seccion contains the different navegable categories of the store.
+Section /Home directs the user back to the initial page. Categories allow users to navigate between the different products available in the store.
+The Cart icon is shown when the first purchase is made. It takes the user to the "/Cart" section, where the operation can be finished after filling in the purchase form.</p>
 
-### `npm run build`
+### Body ### 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>Esta sección contiene todos los productos disponibles en la tienda.
+Al clickear sobre un producto, se dirige al usuario hacia la página que contiene el detalle del producto, en la cual puede seleccionarse la cantidad a comprar dependiendo del stock disponible.</p>
+-
+<p>This section contains every product available in the store.
+By clicking a product the user is directed towards the product detail page, where the item quantity to buy can be selected depending on the available stock.</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Cart ###
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>En esta sección el usuario puede ver la cantidad y el costo total de los productos a comprar.
+También se incluye la opción de borrar un producto particular de la lista, o limpiar el carrito eliminando todos los productos disponibles.
+Para completar la orden de compra, se requiere al usuario llenar el formulario de compra con sus datos personales.
+Despues de esto, el comprador está habilitado para finalizar la compra.</p>
+-
+<p>In this section, the user can see the quantity and total amount of the products to buy.
+It is also included an option to delete a single product of the list, or cleaning the cart by eliminating all available products.
+To complete the purchase order, the user is required to fill in the purchase form with their personal information.
+After this, the buyer is enabled to finish the purchase.</p>
 
-### `npm run eject`
+### Footer ###
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>Esta sección muestra el nombre de la persona que desarrolló la página y el año de deploy.</p>
+-
+<p>This section shows developer´s name and deploy year.</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Desarrollado con/ developed with:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<ul>
+    <li>Visual Studio Code</li>
+    <li>React</li>
+    <li>Git</li>
+    <li>Firebase</li>
+    <li>Formik</li>
+    <li>Cloudinary</li>
+    <li>React Toastify</li>
+</ul>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## *Dependencias / Dependencies:*
 
-## Learn More
+- React Router: Se utilizo esta librería para crear las rutas de navegación que renderizan cada uno de los  componentes, agregandole dinamismo a la aplicación.
+- React Router: This library was used to create the  navigational routes in charge of rendering each of the components, adding dinamism to the aplication.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Fontawesome: Los íconos utilizados en la applicación son componentes importados de esta librería.
+- Fontawesome: All icons used in the application are imported components of this library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Firebase: Se uso esta librería para utilizar la base de datos de Firebase, para almacenar el stock de la tienda y los datos del usuario.
+- Firebase: This library was used to operate Firebase´s database in order to store the shop´s item stock and user data.
 
-### Code Splitting
+## *Ejecución de la aplicación / Application execute :*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Abrir una nueva terminal y clonar el repositorio con el siguiente comando:
+    ```
+    git clone https://github.com/JaguRom/Boulder-Agustin-Romero
+    ```
 
-### Analyzing the Bundle Size
+-  Open a new terminal and clone the repository using the following command:
+    ```
+    git clone https://github.com/JaguRom/Boulder-Agustin-Romero
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Dentro del proyecto, abrir una nueva terminal y ejecutar el siguiente comando:
+    ```
+    cd Boulder-Agustin-Romero
+    npm install
+    npm start
+    ```
+-  Inside the proyect, open a new terminal and execute the following command:
+    ```
+    cd Boulder-Agustin-Romero
+    npm install
+    npm start
+    ```
 
-### Making a Progressive Web App
+## *Información acerca del desarrollo / Information about development :*
+### *Rutas / Routes:*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Main ("/"): Renderiza las imágenes de todos los productos junto con un navbar que permite acceder a todas las categorías
+- Main ("/"): Renders images of all products together with a navbar that allows access to every category.
 
-### Advanced Configuration
+- Category ("/category/:categoryId"): Renderiza los productos filtrados en base a su categoría.
+- Category ("/category/:categoryId"): Renders filtered products according to selected category.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Item ("/detail/:productId"): Renderiza una card con los detalles del producto seleccionado.
+- Item ("/detail/:productId"): Renders a card with selected product details.
 
-### Deployment
+- Cart ("/cart"): Renderiza el carrito de compras con los productos agregados por el usuario.
+- Cart ("/cart"): Reders the cart page whith products added by the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Developer: Agustín Romero
+
+
+
+#### [Github](https://github.com/JaguRom)
+#### [LinkedIn](https://www.linkedin.com/in/juan-agustin-romero)
+
+
+---

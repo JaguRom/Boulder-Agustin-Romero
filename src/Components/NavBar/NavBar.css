@@ -1,7 +1,9 @@
 .nav-container {
     width: 100%;
-    background-color: #9C5D46;
+    background-color: #9D4F1F;
+    background-image: linear-gradient(170deg, #F7D8A8 5%,#9D4F1F 80%);
     color: #FFFBFF;
+    padding-top: 10px;
 }
 
 nav{
@@ -19,7 +21,7 @@ nav{
 }
 
 .button{
-    border-radius: 30%;
+    border-radius: 10px;
     background-color: #8e9b1b;
     padding: 0 20px;
     color: black;
@@ -28,4 +30,35 @@ nav{
 .button:hover {
 box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 color: snow;
+}
+
+
+.button{
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    border-color: black;
+    background-color: #8e9b1b;
+    padding: 0 20px;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    size: 15px;
+    height: fit-content;
+}
+.button:hover {
+box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+color: snow;
+}
+
+.climbingGear {
+    grid-column-start: 3;
+}
+.gear {
+    grid-column-start: 4;
+}
+.noDec{
+    text-decoration: none;
 }

@@ -1,17 +1,18 @@
 import "./NavBar.css"
 import CartWidget from "../CartWidget/CartWidget";
+import {NavLink} from "react-router-dom";
 
 function NavBar() {
     return (
-      <div className="nav-container">
+      <header className="nav-container">
       <nav>
-            <button className="home button"> Home </button>
-            <button className="climbingGear button"> Climbing Gear </button>
-            <button className="trekking button"> Trekking </button>
-            <button button className="camping button"> Camping </button>
-            <CartWidget />
+            <NavLink to={'/'} className="button home" >Home</NavLink>
+            <NavLink to={'/category/Climbing Gear'} className="button climbingGear">Climbing Gear</NavLink>
+            <NavLink to={'/category/Trekking'} className="button trekking">Trekking</NavLink>
+            <NavLink to={'/category/Camping'} className="button camping">Camping</NavLink>
+            <NavLink to ={'/Cart'} className="noDec" >{<CartWidget />}</NavLink>
       </nav>
-      </div>
+      </header>
     )
 }
 
