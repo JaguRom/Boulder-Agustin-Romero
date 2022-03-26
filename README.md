@@ -117,7 +117,8 @@ After this, the buyer is enabled to finish the purchase.</p>
 - Cart ("/cart"): Reders the cart page whith products added by the user.
 
 
-
+### Deployed:
+https://boulder-agustin-romero.vercel.app/
 
 ### Developer: Agustín Romero
 
